@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Christmas Wishlist</title>
+    <!-- Google Fonts link for Press Start 2P -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Snowflakes effect */
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .snowflake {
+            color: #fff;
+            font-size: 1.5rem;
+            font-family: 'Press Start 2P', cursive; /* Applying Press Start 2P font */
+            text-shadow: 0 0 5px #000;
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            animation: snowflakes-shake 3s ease-in-out infinite, snowflakes-fall 10s linear infinite;
+        }
+
+        .snowflake .inner {
+            animation: snowflakes-fall 10s linear infinite;
+        }
+
+        @keyframes snowflakes-fall {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(110vh); }
+        }
+
+        @keyframes snowflakes-shake {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(80px); }
+        }
+
+        .snowflake:nth-of-type(1) { left: 10%; animation-delay: 1s; }
+        .snowflake:nth-of-type(2) { left: 20%; animation-delay: 0.5s; }
+        .snowflake:nth-of-type(3) { left: 30%; animation-delay: 2s; }
+        .snowflake:nth-of-type(4) { left: 40%; animation-delay: 2s; }
+        .snowflake:nth-of-type(5) { left: 50%; animation-delay: 3s; }
+        .snowflake:nth-of-type(6) { left: 60%; animation-delay: 2s; }
+        .snowflake:nth-of-type(7) { left: 70%; animation-delay: 1s; }
+        .snowflake:nth-of-type(8) { left: 80%; animation-delay: 0s; }
+        .snowflake:nth-of-type(9) { left: 90%; animation-delay: 1.5s; }
+        .snowflake:nth-of-type(10) { left: 25%; animation-delay: 0s; }
+        .snowflake:nth-of-type(11) { left: 65%; animation-delay: 2.5s; }
+
+        /* Other page styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive; /* Applying Press Start 2P font to entire body */
+            background-color: #30fcc9f3;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1f3b34;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ff5050;
+            text-shadow: 2px 2px 8px #fff;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #00e600;
+            margin-bottom: 20px;
+        }
+
+        .wishlist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .wishlist .item {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            background-color: #2c6f6f;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 1px 5px #fff;
+        }
+
+        /* Style for links */
+        .wishlist .item a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .wishlist .item a:hover {
+            color: #ff5050;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #ffcc00;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #f3f3f3;
+        }
+
+        footer::before {
+            content: '❄️';
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        .wishlist .item::before {
+            content: "🎁";
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+        <div class="snowflake"><div class="inner">❅</div></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>My Christmas Wishlist</h1>
+            <p>Ho ho ho! Here's a list of some things I'd love this holiday season!</p>
+        </header>
+
+        <section class="wishlist">
+            <ul>
+                <li class="item"><a href="https://a.co/d/aNeDMo9" target="_blank">🖥️ $55 | I7-7700 CPU </a></li>
+                <li class="item"><a href="https://a.co/d/gbcAG1m" target="_blank">🖱️ Retro Styled Mouse</a></li>
+                <li class="item"><a href="https://www.amazon.com/s?k=some+type+of+office+chair&crid=IFYE7MGKQZHF&sprefix=some+type+of+office+chair%2Caps%2C331&ref=nb_sb_noss" target="_blank">💺 Butt Cancer Prevention</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Thank you for making my Christmas extra special!</p>
+            <p>I'll likely be adding/removing from the list throughout the month.</p>
+            <p>This was made from boredom, I'll gladly accept socializing as a gift too!❄️</p>
+            <br>
+            <br>
+            <p>Site made using ChatGPT</p>
+        </footer>
+    </div>
+</body>
+</html>
