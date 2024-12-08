@@ -105,7 +105,7 @@
 
         .wishlist .item {
             font-size: 1.1rem;
-            margin: 15px 0;
+            margin: 20px 0;
             background-color: #2c6f6f;
             padding: 10px;
             border-radius: 5px;
@@ -128,6 +128,44 @@
             font-weight: bold;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             transform: translate(-50%, -50%); /* Adjust label to be outside the item box */
+        }
+
+        .received {
+            max-height: 400px; /* Set the height for the scrollable area */
+            overflow-y: auto; /* Enable vertical scrolling if content overflows */
+            padding-right: 0px; /* Optional: Adds some padding on the right to prevent scrollbar overlap */
+        }
+
+        .received ul {
+            list-style-type: none;
+            padding: 50px;
+
+        }
+
+        .received .item {
+            font-size: 1.1rem;
+            margin: 40px 0;
+            background-color: #2c6f6f;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 1px 5px #fff;
+            position: relative; /* To position the sticker */
+            padding-left: 40px; /* Extra space to avoid overlap with the label */
+        }
+
+        .from-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ff5050;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0%;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transform: translate(-5%, -70% ); /* Adjust label to be outside the item box */
         }
 
         /* Style for links */
@@ -161,6 +199,22 @@
         }
 
         .wishlist .item::before {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .received .item a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .received .item a:hover {
+            color: #ff5050;
+        }
+
+        .received .item::before {
             margin-right: 10px;
             font-size: 1.5rem;
         }
@@ -238,6 +292,24 @@
             <br>
             <p>Site made using ChatGPT</p>
         </footer>
+        <br>
+        <br>
+        <div class="container">
+            <header>
+                <h1>Received List</h1>
+                <br>
+                <p>Thank you so much for your gifts!</p>
+            </header>
+
+        <section class="received">
+            <ul>
+                <li class="item">
+                    <span class="from-label">From: Keith & Jayce</span>
+                    <a href="https://mcdonalds.com" target="_blank">🍟 Tons of Fast Food</a>
+                </li>
+            </ul>
+        </section>
+        
     </div>
 </body>
 </html>
