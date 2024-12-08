@@ -91,43 +91,19 @@
             margin-bottom: 20px;
         }
 
-        .wishlist {
-            max-height: 400px; /* Set the height for the scrollable area */
-            overflow-y: auto; /* Enable vertical scrolling if content overflows */
-            padding-right: 0px; /* Optional: Adds some padding on the right to prevent scrollbar overlap */
-        }
-
         .wishlist ul {
             list-style-type: none;
-            padding: 50px;
-
+            padding: 0;
         }
 
         .wishlist .item {
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin: 15px 0;
             background-color: #2c6f6f;
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             text-shadow: 1px 1px 5px #fff;
-            position: relative; /* To position the sticker */
-            padding-left: 40px; /* Extra space to avoid overlap with the label */
-        }
-
-        /* Style for price label (sticker) */
-        .price-label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #ff5050;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 50%;
-            font-size: 1rem;
-            font-weight: bold;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            transform: translate(-50%, -50%); /* Adjust label to be outside the item box */
         }
 
         /* Style for links */
@@ -161,6 +137,7 @@
         }
 
         .wishlist .item::before {
+            content: "🎁";
             margin-right: 10px;
             font-size: 1.5rem;
         }
@@ -191,34 +168,12 @@
 
         <section class="wishlist">
             <ul>
-                <li class="item">
-                    <span class="price-label">$100</span>
-                    <a href="https://a.co/d/ihPudP3" target="_blank">📚 Japanese Textbooks</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">$40</span>
-                    <a href="https://a.co/d/65zNy2I" target="_blank">🔌 Soldering Iron</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">$70</span>
-                    <a href="https://a.co/d/gbcAG1m" target="_blank">🖱️ Retro Style Mouse</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">$70</span>
-                    <a href="https://a.co/d/7iI936x" target="_blank">🔊 Big Wub Dubs</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">$65</span>
-                    <a href="https://a.co/d/bOSetri" target="_blank">🕹️ Miyoo Mini Plus</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">{x}</span>
-                    <a href="https://www.amazon.com/s?k=some+type+of+office+chair&crid=IFYE7MGKQZHF&sprefix=some+type+of+office+chair%2Caps%2C331&ref=nb_sb_noss" target="_blank">💺 Butt Cancer Prevention</a>
-                </li>
-                <li class="item">
-                    <span class="price-label">TBD</span>
-                    <a href="https://a.co/d/fF6y0bn" target="_blank">Intel Arc B-Series GPU</a>
-                </li>
+                <li class="item"><a href="https://a.co/d/ihPudP3" target="_blank">📚 Japanese Textbooks</a></li>
+                <li class="item"><a href="https://a.co/d/65zNy2I" target="_blank">🔌 Soldering Iron</a></li>
+                <li class="item"><a href="https://a.co/d/gbcAG1m" target="_blank">🖱️ Retro Style Mouse</a></li>
+                <li class="item"><a href="https://a.co/d/7iI936x" target="_blank">🔊 Big Wub Dubs</a></li>
+                <li class="item"><a href="https://a.co/d/bOSetri" target="_blank">🕹️ Miyoo Mini Plus</a></li>
+                <li class="item"><a href="https://www.amazon.com/s?k=some+type+of+office+chair&crid=IFYE7MGKQZHF&sprefix=some+type+of+office+chair%2Caps%2C331&ref=nb_sb_noss" target="_blank">💺 Butt Cancer Prevention</a></li>
             </ul>
         </section>
 
